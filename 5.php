@@ -6,11 +6,11 @@ function cetak_gambar($string){
      for($i=1;$i<=$p;$i++){
         for($j=0;$j<$p;$j++){
             if($j==$i-1){
-                echo "&nbsp".$string[$j]."&nbsp";
+                echo " ".$string[$j]." ";
             }else if($j==10-$i){
-                echo "&nbsp".$string[$i-1]."&nbsp";
+                echo " ".$string[$i-1]." ";
             }else{
-                echo "&nbsp=&nbsp";
+                echo " = ";
             }
         }
          echo "\n";
