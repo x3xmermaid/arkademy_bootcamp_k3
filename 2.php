@@ -1,9 +1,10 @@
 <?php
 $username = "asdaqsdw";
-$password = "xxxXcx1@";
+$email = "122AAas131@gmail.com";
 
 
-function validasi($username, $password){
+
+function validasi($username, $email){
     
     if(ctype_lower($username) && strlen($username) == 8){
         echo "Username Benar \n";
@@ -11,12 +12,14 @@ function validasi($username, $password){
         echo "Username Salah tidak boleh huruf besar, angka, dan simbol dan berjumlah 8\n";
     } 
 
-    if(!preg_match('/^(?=.*\d)(?=.*[@#\-_$%^&+=§!\?])(?=.*[a-z])(?=.*[A-Z])[0-9A-Za-z@#\-_$%^&+=§!\?]{8,}$/', $password)){
-        echo "Pass salah harus ada huruf besar, huruf kecil, angka, dan simbol dan berjumlah minimal 8\n";
+    if(!preg_match('/^(?=.*\d)([0-9a-z\+_\-\w]{4,}+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix', $email)) 
+    {
+        echo "Email salah harus ada huruf besar, huruf kecil, angka, dan berjumlah minimal 4\n";
     }else{
-        echo "password Benar\n";
+        echo "email Benar\n";
     } 
 }
 
-validasi ($username, $password);
+validasi ($username, $email);
+
 ?>
