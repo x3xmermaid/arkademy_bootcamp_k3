@@ -1,6 +1,6 @@
 <?php
 $username = "asdaqsdw";
-$email = "122AAas131@gmail.com";
+$email = "122aA131@gmail.com";
 
 
 
@@ -12,7 +12,7 @@ function validasi($username, $email){
         echo "Username Salah tidak boleh huruf besar, angka, dan simbol dan berjumlah 8\n";
     } 
 
-    if(!preg_match('/^(?=.*\d)([0-9a-z\+_\-\w]{4,}+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix', $email)) 
+    if(!preg_match('/^(?=.*\d)(?=\P{Ll}*\p{Ll})(?=\P{Lu}*\p{Lu})(?=\P{N}*\p{N})([0-9a-z\+_\-\w]{4,}+)*@([a-z0-9\-]+\.)+[a-z]{2,6}$/ix', $email)) 
     {
         echo "Email salah harus ada huruf besar, huruf kecil, angka, dan berjumlah minimal 4\n";
     }else{
