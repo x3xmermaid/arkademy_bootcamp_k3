@@ -13,8 +13,8 @@ function cetak_gambar($string){
                 echo "&nbsp=&nbsp";
             }
         }
-         //echo "\n";
-         echo nl2br("\r");
+         echo "\n";
+         //echo nl2br("\r");
     }    
 }
  cetak_gambar($string);
