@@ -9,9 +9,8 @@ $school = [
 ];
 
 $skills = [
-    'program' => ['php', 'android studio', 'html', 'css'],
-    'olahraga' => ['renang', 'sepeda', 'badminton'],
-    'lain-lain' => ['fast-learner', 'gaming']
+    'name' => ['php', 'android studio', 'html', 'css'],
+    'score' => ['50', '80', '90', '100'],
 ];
 
 function dataBio ($name, $address, $hobbies, $is_married, $school, $skills){
